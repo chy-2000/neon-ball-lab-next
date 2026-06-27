@@ -1,27 +1,28 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a12;
+  --foreground: #ededed;
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+  font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* 爆炸按钮脉冲动画 */
+@keyframes pulse-explode {
+  from {
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
   }
+  to {
+    box-shadow: 0 0 40px rgba(255, 0, 255, 0.6);
+  }
+}
+
+.animate-pulse {
+  animation: pulse-explode 0.5s ease-in-out infinite alternate;
 }
