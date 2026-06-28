@@ -11,7 +11,7 @@ interface HUDProps {
 
 export default function HUD({ ballCount, fps, collisionCount, mousePos }: HUDProps) {
   const items = [
-    { label: '🔮 小球数量', value: ballCount },
+    { label: '🔮 小球数量 main更改一下', value: ballCount },
     { label: '⚡ FPSS', value: fps },
     { label: '💥 碰撞次数', value: collisionCount },
     { label: '📍 鼠标坐标', value: mousePos },
