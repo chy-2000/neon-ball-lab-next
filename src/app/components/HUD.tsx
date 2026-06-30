@@ -14,7 +14,7 @@ export default function HUD({ ballCount, fps, collisionCount, mousePos }: HUDPro
     { label: '🔮 小球数量', value: ballCount },
     { label: '⚡ FPSS hotbranch更改', value: fps },
     { label: '💥 碰撞次数 hotbranch,测试pull request', value: collisionCount },
-    { label: '📍 鼠标坐标', value: mousePos },
+    { label: '📍 鼠标坐标,hotbranch 6.30 11 45更改', value: mousePos },
   ];
 
   return (
