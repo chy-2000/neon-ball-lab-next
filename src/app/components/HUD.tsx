@@ -13,10 +13,8 @@ export default function HUD({ ballCount, fps, collisionCount, mousePos }: HUDPro
   const items = [
     { label: '🔮 小球数量', value: ballCount },
     { label: '⚡ FPSS hotbranch更改', value: fps },
-    { label: '🔮 小球数量 main更改一下', value: ballCount },
-    { label: '⚡ FPSS', value: fps },
-    { label: '💥 碰撞次数', value: collisionCount },
-    { label: '📍 鼠标坐标，再次更改测试pull request', value: mousePos },
+    { label: '💥 碰撞次数 hotbranch,测试pull request', value: collisionCount },
+    { label: '📍 鼠标坐标', value: mousePos },
   ];
 
   return (
