@@ -16,7 +16,7 @@ export default function HUD({ ballCount, fps, collisionCount, mousePos }: HUDPro
     { label: '🔮 小球数量 main更改一下', value: ballCount },
     { label: '⚡ FPSS', value: fps },
     { label: '💥 碰撞次数', value: collisionCount },
-    { label: '📍 鼠标坐标', value: mousePos },
+    { label: '📍 鼠标坐标，再次更改测试pull request', value: mousePos },
   ];
 
   return (
